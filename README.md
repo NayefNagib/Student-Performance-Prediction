@@ -1,87 +1,56 @@
 # 📊 Student Performance Prediction System
 
-An end-to-end Machine Learning project that predicts student academic performance and pass/fail status using behavioral, social, and academic features.
+An end-to-end Machine Learning system that predicts student academic performance (final grade) and PASS/FAIL status using behavioral, social, and academic features.
 
-Built using R, Shiny, and multiple ML models including LightGBM and Random Forest.
+Built using **R, Machine Learning models, and Shiny**, with LightGBM as the best-performing model.
 
 ---
 
-## 🚀 Features
+## 🎯 Project Objective
+
+To analyze student behavior and academic history in order to:
+- Predict final exam grade (regression)
+- Classify students as PASS / FAIL
+- Compare multiple ML models
+- Deploy an interactive prediction system
+
+---
+
+## 🚀 Key Features
 
 - Data preprocessing & cleaning
 - Exploratory Data Analysis (EDA)
-- Feature engineering
-- Regression models for grade prediction
-- Classification model for PASS/FAIL
-- Model comparison (RMSE & R²)
-- Hyperparameter tuning
+- Feature engineering & transformation
+- Multiple regression models
+- Classification (PASS / FAIL)
+- Model comparison using evaluation metrics
+- Hyperparameter tuning (LightGBM, Random Forest)
 - Feature importance analysis
-- Interactive Shiny web app
-- Real-time predictions
+- Interactive Shiny web application
+- Real-time prediction system
 
 ---
 
-## 🧠 Dataset
+## 🧠 Dataset Overview
 
-The dataset includes student academic and behavioral data:
+The dataset contains academic and behavioral student attributes:
 
+### Academic Features
+- G1 (First period grade)
+- G2 (Second period grade)
 - Study time
-- Past grades (G1, G2)
 - Absences
-- Alcohol consumption
-- Family education level
-- Social factors
+
+### Social & Behavioral Features
+- Alcohol consumption (weekday/weekend)
+- Romantic relationship status
+- Internet access
+- Family relationship factors
+
+### Demographic Features
+- Mother & Father education levels
 - Subject (Math / Portuguese)
 
 ---
 
 ## 🏗️ Machine Learning Pipeline
-
-Data Collection → Cleaning → Feature Engineering → Encoding → Model Training → Evaluation → Deployment
-
----
-
-## 📊 Models Used
-
-### Regression
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- LightGBM Regressor (Best Model)
-
-### Classification
-- Random Forest (PASS / FAIL prediction)
-
----
-
-## 📈 Evaluation Metrics
-
-- RMSE (Root Mean Squared Error)
-- R² Score
-- Accuracy (Classification)
-
----
-
-## 🧪 Feature Engineering
-
-- Total alcohol consumption
-- Parent education score
-- Log transformation of absences
-- One-hot encoding for categorical features
-
----
-
-## 🌐 Shiny App
-
-The project includes an interactive web app built with **R Shiny**.
-
-### Features:
-- Input student data
-- Predict final grade instantly
-- PASS / FAIL classification
-- Powered by LightGBM model
-
-### Run locally:
-
-```r
-shiny::runApp("app/app.R")
