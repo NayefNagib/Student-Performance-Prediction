@@ -1,0 +1,17 @@
+# Core ML & Data
+dplyr
+corrplot
+
+# Models
+randomForest
+lightgbm
+rpart
+rpart.plot
+
+# Shiny App
+shiny
+shinythemes
+
+# Utilities (optional but common)
+ggplot2
+data.table

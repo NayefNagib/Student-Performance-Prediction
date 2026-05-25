@@ -1,0 +1,21 @@
+# R environment files
+.Rhistory
+.RData
+.Rproj.user
+
+# Python / Jupyter (if used)
+venv/
+Lib/
+Scripts/
+pyvenv.cfg
+__pycache__/
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+
+# Large outputs (optional safety)
+*.log
